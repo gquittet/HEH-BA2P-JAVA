@@ -9,6 +9,11 @@ import be.isims.ihm.tp1.ex2.Province;
  */
 public class Main {
 
+    /**
+     * C'est parti pour un nouvel exercice !
+     * L'explication de cette fonction est dans l'image ihm-tp1-ex2-main-uml.jpg
+     * @param args Le tableau d'arguments
+     */
     public static void main(String[] args) {
         Province hainaut = new Province();
         Province namur = new Province();

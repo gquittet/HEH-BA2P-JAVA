@@ -406,7 +406,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Magasin",
+											"text": "Fichier",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -1841,7 +1841,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Ville",
+											"text": "Repertoire",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2722,7 +2722,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Magasin",
+					"name": "Fichier",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
@@ -2900,7 +2900,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Ville",
+					"name": "Repertoire",
 					"ownedElements": [
 						{
 							"_type": "UMLGeneralization",
