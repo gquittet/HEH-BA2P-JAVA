@@ -17,6 +17,7 @@ public class Composite extends Component {
 
     /**
      * Crée un Composite
+     * @param nom Le nom du Composite
      */
     public Composite(String nom) {
         this.nom = nom;
