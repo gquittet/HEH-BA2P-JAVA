@@ -898,7 +898,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+creer(c: Component)",
+											"text": "+ajouter(c: Component)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2812,7 +2812,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFasgXr/vA3gi4="
 							},
-							"name": "creer",
+							"name": "ajouter",
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
