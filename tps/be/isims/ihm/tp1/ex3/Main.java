@@ -37,7 +37,7 @@ public class Main {
         user.ajouter(fichier1);
         user.ajouter(fichier2);
 
-        System.out.println("/");
+        System.out.println("/\n");
         System.out.println(root.lister());
     }
 }

@@ -50,13 +50,13 @@ public class Composite extends Component {
             if(c instanceof Composite) {
                 Composite b = (Composite) c;
                 noms += b.getNom();
-                noms += "\n    ";
+                noms += "\n";
                 noms += b.lister();
-                noms += "\n    ";
+                noms += "\n";
             }
-            else {
+            else {     
                 noms += c.lister();
-                noms += "\n        ";                
+                noms += "\n";
             }
         }
         return noms;
