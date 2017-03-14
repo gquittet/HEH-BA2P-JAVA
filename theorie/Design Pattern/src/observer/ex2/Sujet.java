@@ -22,6 +22,8 @@ public abstract class Sujet {
     }
 
     public void clique() {
-        
+        for (Observateur ob : observateurs) {
+            ob.actualise();
+        }    
     }
 }

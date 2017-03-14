@@ -5,11 +5,7 @@ package observer.ex2;
  */
 public class Bouton extends Sujet {
 
-    private Label label;
-    private ZoneTexte zoneTexte;
-
     public Bouton() {
-        label = new Label();
-        zoneTexte = new ZoneTexte();
+        
     }
 }
