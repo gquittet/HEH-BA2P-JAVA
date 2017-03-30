@@ -2,8 +2,14 @@ package be.isims.ihm.tp3.ex1;
 
 /**
  * Observateur
+ * L'interface qui actualise notre Sujet
  */
-public interface Observateur {
+public abstract class Observateur {
 
-    public void actualise(int nombre);
+    protected Saisi saisi;
+
+    /**
+     * La fonction qui actualise le Sujet
+     */
+    public abstract void actualise();
 }

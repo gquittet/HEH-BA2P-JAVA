@@ -6,14 +6,32 @@ import java.util.*;
 /**
  * Saisi
  */
-public class Saisi extends Sujet {
+public class Saisi {
+
+    protected List<Observateur> observateurs;
+    protected int nombre;
 
     public Saisi() {
-        super();
+        observateurs = new ArrayList<Observateur>();
+        nombre = 0;
+    }
+
+    public void attach(Observateur observateur) {
+        observateurs.add(observateur);
+    }
+
+    public void notifie() {
+        for (Observateur observateur : observateurs) {
+            observateur.actualise();
+        }
     }
 
     public void setNombre(int nombre) {
-        super.nombre = nombre;
-        super.notifie();
-    } 
+        this.nombre = nombre;
+        notifie();
+    }
+
+    public int getNombre() {
+        return nombre;
+    }
 }
