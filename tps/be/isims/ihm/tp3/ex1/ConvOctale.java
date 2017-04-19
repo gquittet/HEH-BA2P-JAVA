@@ -7,6 +7,10 @@ package be.isims.ihm.tp3.ex1;
  */
 public class ConvOctale extends Observateur {
  
+    /**
+     * Instancie la convertion octale
+     * @param saisi L'objet Saisi
+     */
     public ConvOctale(Saisi saisi) {
         this.saisi = saisi;
         this.saisi.attach(this);
