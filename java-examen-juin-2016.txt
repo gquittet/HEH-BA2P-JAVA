@@ -1,0 +1,43 @@
+Exercice 1 :
+Ecrivez un programme permettant de déterminer la superficie d'un terrain de forme quelconque.
+
+Méthode de calcul d'aire :
+-Diviser le terrain en parcelles de forme regulieres.
+-Sommer les surfaces de chaucune des parcelles obtenues.
+
+Créez la clase TerrainQuelconque qui possède les méthodes suivantes :
+-addForme (Parcelle p) -> ajoute une parcelle de forme régulière
+-double calculerAire() -> additionne l'ensemble des surfaces de chaque parcelle ajoutées et retourne l'aire du terrain.
+
+Considerez les formes triangle(B,h) et rectangle (L,l).
+
+---
+
+Attention : concevez une app extensible ! L'ajout d'une autre forme de terrain ne doit pas modifier la classe TerrainQuelconque.
+1) Réalisez cette app en utilisant le pattern Composite.
+2) Dessinez le diagramme UML au verso.
+
+Exercice 2 :
+Ecrire une GUI qui permet de compter le nombre de lettres majuscules, minuscules et de chiffres contenu dans une chaine de caractère quelconque.
+Appliquer le modèle MVC. Utiliser la classe Character.
+
+Après clic sur le bouton "Lire", les stats (maj,min et chiffres) sont affichées sur la fenêtre et la console.
+
+Contenu de la classe Client : 
+
+public class Client {
+	public static void main (String[] args){
+
+		Texte txt=new Texte("AAbbbCd12GG9");
+		Controleur ctrl=new Controleur(txt);
+
+		Fenetre fen=new Fenetre(ctrl);
+		fen.setVisible(true);
+
+		Consol cons=new Console();
+
+		txt.addObservateur(fen);
+		txt.addObservateur(cons);
+	}
+}
+
