@@ -23,7 +23,7 @@ Appliquer le modèle MVC. Utiliser la classe Character.
 
 Après clic sur le bouton "Lire", les stats (maj,min et chiffres) sont affichées sur la fenêtre et la console.
 
-Contenu de la classe Client : 
+Contenu de la classe Client :
 
 public class Client {
 	public static void main (String[] args){
@@ -34,7 +34,7 @@ public class Client {
 		Fenetre fen=new Fenetre(ctrl);
 		fen.setVisible(true);
 
-		Consol cons=new Console();
+		Console cons=new Console(ctrl);
 
 		txt.addObservateur(fen);
 		txt.addObservateur(cons);
