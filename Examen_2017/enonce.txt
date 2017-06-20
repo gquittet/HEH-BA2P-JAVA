@@ -1,0 +1,50 @@
+Questions de l'examen de Java de 2017
+=====================================
+
+Exercice 1:
+-----------
+Créer une application permettant de choisir un algorithme de tri (QuickSort, ShellSort et MergeSort).
+Le QuickSort est l'algorithme par défaut pour trier un tableau d'entiers.
+Le but n'étant pas d'implémenter les algorithmes, mais de mettre en oeuvre le pattern stratégie.
+Dessiner le diagramme de classes de votre solution.
+
+Pour l'algorithme QuickSort, utilisez la méthode Array.sort() qui est implémentée dans l'API Java.
+Classe : java.util.Arrays
+
+sort
+
+public static void sort(int[] a)
+
+
+
+Résultat :
+
+-> PatternStratégie java Main
+-- Tableau trié à l'aide de l'algorithme QuickSort --
+5 15 20 25 30
+-- Tableau trié à l'aide de l'algorithme MergeSort --
+5 15 20 25 30
+
+
+
+
+Exercice 2:
+-----------
+Appliquer l'Observer Pattern pour une application d'édition de texte multi-fenêtre.
+Quand un texte est modifié dans l'une des fenêtres, cette modification est répercutée à l'ensemble des autres fenêtres.
+Pour cela implémenter les classes suivantes, les interfaces Subject et Observer et un KeyListener (méthode keyReleased)
+ou la classe KeyAdapter.
+Un bouton "Open" permet de créer et d'afficher une nouvelle fenêtre.
+
+- Document : contient le texte et qui est le sujet obervé.
+- MultiEditor : fenêtre permettant l'édition du texte et qui observe le texte.
+
+On vous fournit la classe Main suivante:
+
+public class Main {
+    public static void main(String[] args) {
+        Document doc = new Document();
+        Editor fenetre = new Editor(doc);
+    }
+}
+
